@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SJTSW Example</title>
+	<meta charset="utf-8">
+	<script src="translations.js"></script>
+	<script src="sjtsw.js"></script>
+</head>
+<body>
+
+	<h1>Welcome to SJTSW Example Site, you can switch browser preferred languaje to spanish and reload the page to see changes, the next strings are indexed into the translate system: </h1>
+	<h2><i id="str-text-1">"Example Text 1"</i></h2>
+	<h2><i id="str-text-2">"Example text 2"</i></h2>
+
+<!--Translate script is after the content-->
+<script>SJTSW_TranslatePage();</script>
+<h2><i id="str-text-3">"this text is not translate because is declared after the translate function"</i></h2>
+</body>
+</html>
