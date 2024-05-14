@@ -5,7 +5,13 @@ Simple JS Translation System for Webpages
 
 ### Step 1: Insert required scripts in your page
 
-1. SJTSW Main script
+1. Your translations (assuming that they are saved in translations.js)
+
+```html
+<script src="translations.js"></script>
+```
+
+2. SJTSW Main script
 
 ```html
 <script src="https://raw.githubusercontent.com/ItzSelenux/SJTSW/main/sjtsw.js"></script>
@@ -14,12 +20,6 @@ Simple JS Translation System for Webpages
 
 ```html
 <script src="sjtsw.js"></script>
-```
-
-2. Your translations (assuming that they are saved in translations.js)
-
-```html
-<script src="translations.js"></script>
 ```
 
 ### Step 2: Load Translate Function 
