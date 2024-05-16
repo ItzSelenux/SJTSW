@@ -14,7 +14,7 @@ Simple JS Translation System for Webpages
 2. SJTSW Main script
 
 ```html
-<script src="https://raw.githubusercontent.com/ItzSelenux/SJTSW/main/sjtsw.js"></script>
+<script src="https://itzselenux.github.io/SJTSW/sjtsw.js"></script>
 ```
 - or if you want to load locally
 
