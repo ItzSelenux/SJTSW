@@ -35,6 +35,8 @@ var translations =
 }
 ```
 
+>tip: you if you are running Linux, you can use `get-sjtsw-ids.sh`, available in this repository
+
 *(see translations.js for an example)*
 
 ### Step 3: Insert required scripts in your page
