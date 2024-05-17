@@ -68,8 +68,12 @@ var translations =
 
 ## Issues
 
-### How can i format a word that is inside a full string? (example: `<a>` or `<p>`)
+### - How can i format a word that is inside a full string? (example: `<a>` or `<p>`)
 
 simply put the format in the translated string
 
 `'str-content-download-1': 'You can <a class="dwn" href="downloads.html">download here!</a>',`
+
+### - Too large translations files
+
+You might want to consider splitting the translation files on a per-page basis. For instance, you could have separate files like translations-mainpage, translations-about, translations-more, and so on. There's no issue with splitting them in this way, as long as the variable `translations` remains available on the page.
