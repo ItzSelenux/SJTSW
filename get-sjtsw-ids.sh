@@ -15,11 +15,13 @@ output="$2"
 if [ -z "$output" ]; then
 	output="translations.js"
 fi
-printf "var translations = \n{\n	'en':\n	{\n" > $output
 
+printf "var translations = \n{\n	'en':\n	{\n" > $output
 grep -oP '<[^>]*id="[^"]*"[^>]*>[^<]*</[^>]*>' "$input" |
-sed -E 's/.*id="([^"]*)".*>([^<]*)<\/[^>]*>/\1: '\''\2'\'',/' | sed -e 's/^/\t\t/' >> $output
-printf "	}\n}" >> $output
+sed -E -e 's/.*id="([^"]*)".*>([^<]*)<\/[^>]*>/\1'\'': '\''\2'\'',/' -e "s/^/\t\t'/" >> $output
+printf "\t}\n}" >> $output
+
+
 
 
 printf "file saved: $output\n"
